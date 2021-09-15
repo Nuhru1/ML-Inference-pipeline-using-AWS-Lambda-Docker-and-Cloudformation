@@ -1,0 +1,6 @@
+# List all python libraries for the lambda
+tensorflow==2.4.0
+numpy
+boto3
+pillow
+# python3-opencv

@@ -1,0 +1,12 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "lambda-tf-s3-stack"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1eh9ry6uwllnz"
+s3_prefix = "lambda-tf-s3-stack"
+region = "eu-west-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "InputBucketName=\"nurutfinferenceim\""
+image_repositories = ["TensorFlowInferenceFunction=778557268564.dkr.ecr.eu-west-1.amazonaws.com/lambda-tf-s3-repo"]
